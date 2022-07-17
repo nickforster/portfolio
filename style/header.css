@@ -11,17 +11,19 @@
     padding: .75rem 0;
     font-size: 1.5rem;
     box-shadow: 0 5px 35px 2px rgba(0, 0, 0, 0.5);
+    background-color: #494949;
+    z-index: 5000;
 }
 
 #header a {
     text-decoration: none;
-    transform: scale(100%);
+    transform: scale(1);
     color: #cecece;
     transition: all 200ms ease-in-out;
 }
 
 #header a:hover {
     /*text-decoration: underline;*/
-    transform: scale(130%);
+    transform: scale(1.3);
     transition: all 200ms ease-in-out;
 }
