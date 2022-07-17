@@ -1,0 +1,16 @@
+main {
+    margin: 0 2rem;
+}
+
+/*
+    about
+*/
+#about h1:nth-child(2) {
+    position: absolute;
+    top: 3rem;
+    left: 16rem;
+}
+
+#about p {
+    width: 20%;
+}

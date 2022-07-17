@@ -7,9 +7,12 @@ html, body {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: normal;
+    margin: 0 0 0 1rem;
+    font-size: 8rem;
 }
 
 main, footer {
-    transform: translateY(25%);
+    transform: translateY(10%);
 }

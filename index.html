@@ -3,33 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio | Nick Forster</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap"
+          rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
 <body>
-    <header id="header">
-        <a href="#header">home</a>
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-        <a href="https://github.com/nickforster" target="_blank"><i class="fa fa-github"></i></a>
-    </header>
-    <main>
-        <h1>Nick Forster</h1>
-        <div id="about">
-            <h2>about</h2>
-        </div>
-        <div id="projects">
-            <h2>projects</h2>
-        </div>
-        <div id="contact">
-            <h2>contact</h2>
-        </div>
-    </main>
-    <footer>
+<header id="header">
+    <a href="#header">home</a>
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+    <a href="https://github.com/nickforster" target="_blank"><i class="fa fa-github"></i></a>
+</header>
+<main>
+    <div id="about">
+        <h1>Nick</h1>
+        <h1>Forster</h1>
+        <p>Hi! I'm Nick Forster. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    </div>
+    <div id="projects">
+        <h2>projects</h2>
+    </div>
+    <div id="contact">
+        <h2>contact</h2>
+        <form>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <label for="firstname">Firstname</label>
+                        <span id="firstnameSpan"></span>
+                    </td>
+                    <td>
+                        <input type="text" id="firstname" name="firstname" minlength="2" maxlength="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">Lastname</label>
+                        <span id="lastnameSpan"></span>
+                    </td>
+                    <td>
+                        <input type="text" id="lastname" name="lastname" minlength="2" maxlength="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-Mail</label>
+                        <span id="emailSpan"></span>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="regard">Regard</label>
+                        <span id="regardSpan"></span>
+                    </td>
+                    <td>
+                        <input type="text" id="regard" name="regard" minlength="2" maxlength="40" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message">Message</label>
+                        <span id="messageSpan"></span>
+                    </td>
+                    <td>
+                        <textarea id="message" name="message" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit" id="submit">
+                    </td>
+                    <td>
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<footer>
 
-    </footer>
+</footer>
 </body>
 </html>
