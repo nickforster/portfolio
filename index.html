@@ -32,63 +32,42 @@
     <div id="contact">
         <h2>contact</h2>
         <form>
-            <table>
-                <tbody>
-                <tr>
-                    <td>
-                        <label for="firstname">Firstname</label>
-                        <span id="firstnameSpan"></span>
-                    </td>
-                    <td>
-                        <input type="text" id="firstname" name="firstname" minlength="2" maxlength="40" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lastname">Lastname</label>
-                        <span id="lastnameSpan"></span>
-                    </td>
-                    <td>
-                        <input type="text" id="lastname" name="lastname" minlength="2" maxlength="40" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">E-Mail</label>
-                        <span id="emailSpan"></span>
-                    </td>
-                    <td>
-                        <input type="email" id="email" name="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="regard">Regard</label>
-                        <span id="regardSpan"></span>
-                    </td>
-                    <td>
-                        <input type="text" id="regard" name="regard" minlength="2" maxlength="40" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="message">Message</label>
-                        <span id="messageSpan"></span>
-                    </td>
-                    <td>
-                        <textarea id="message" name="message" required></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="submit" id="submit">
-                    </td>
-                    <td>
-                        <input type="reset" value="reset">
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="inputBox">
+                <label for="firstname">Firstname</label>
+                <span class="errorSpan" id="firstnameSpan"></span>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="40" required>
+                <span>Firstname</span>
+            </div>
+            <div class="inputBox">
+                <label for="lastname">Lastname</label>
+                <span class="errorSpan" id="lastnameSpan"></span>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="40" required>
+                <span>Lastname</span>
+            </div>
+            <div class="inputBox">
+                <label for="email">E-Mail</label>
+                <span class="errorSpan" id="emailSpan"></span>
+                <input type="text" id="email" name="email" required>
+                <span>E-Mail</span>
+            </div>
+            <div class="inputBox">
+                <label for="regard">Regard</label>
+                <span class="errorSpan" id="regardSpan"></span>
+                <input type="text" id="regard" name="regard" minlength="2" maxlength="40" required>
+                <span>Regard</span>
+            </div>
+            <div class="inputBox textareaClass">
+                <label for="message">Message</label>
+                <span class="errorSpan" id="messageSpan"></span>
+                <textarea id="message" name="message" required></textarea>
+                <span>Message</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="submit" id="submit">
+            </div>
+            <div class="inputBox">
+                <input type="reset" value="reset" id="reset">
+            </div>
         </form>
     </div>
 </main>

@@ -4,6 +4,7 @@ html, body {
     font-family: "Klavika Medium", serif;
     background-color: #494949;
     color: #cecece;
+    scroll-behavior: smooth;
 }
 
 h1 {
