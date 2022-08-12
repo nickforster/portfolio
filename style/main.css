@@ -5,6 +5,10 @@ main {
 /*
     about
 */
+#about {
+    margin-bottom: 3rem;
+}
+
 #about h1:nth-child(2) {
     position: absolute;
     top: 3rem;
@@ -12,12 +16,26 @@ main {
 }
 
 #about p {
+    margin-top: 3rem;
     width: 20%;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    width: 350px !important;
+    height: auto !important;
+    transform: translateY(-60px);
 }
 
 /*
     projects
 */
+#projects {
+    padding-top: 3.5rem;
+}
+
 #grid-container {
     display: grid;
     grid-auto-rows: 200px;
@@ -70,6 +88,10 @@ h3 > a {
 /*
     contact
 */
+#contact {
+    padding-top: 3.5rem;
+}
+
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
