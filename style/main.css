@@ -197,3 +197,7 @@ textarea::-webkit-scrollbar-thumb {
     right: 0 !important;
     left: auto !important;
 }
+
+#response {
+    justify-content: space-around;
+}
