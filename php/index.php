@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio | Nick Forster</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap"
           rel="stylesheet">
-    <script src="index.js" defer></script>
+    <script src="../index.js" defer></script>
 </head>
 <body id="home">
 <?php
@@ -80,7 +80,7 @@ if (isset($_POST['reset'])) {
     <div id="about">
         <h1>Nick</h1>
         <h1>Forster</h1>
-        <img src="images/cartoonishMe.png" alt="cartoon image of my face">
+        <img src="../images/cartoonishMe.png" alt="cartoon image of my face">
         <p>
             Hi! I'm Nick Forster. I'm a developer from Zürich. I'm in my last year of highschool
             with focus on informatics. I mainly program in Java and JavaScript but I'm always
