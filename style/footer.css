@@ -30,3 +30,22 @@ footer {
     transform: scale(1.7);
     transition: all 200ms ease-in-out;
 }
+
+/*
+    Responsive
+*/
+@media (max-width: 600px) {
+    #footer-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #footer-container div {
+        padding: .25rem;
+    }
+
+    #footer-icons-container {
+        width: 40%;
+    }
+}
