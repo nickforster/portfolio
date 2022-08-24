@@ -20,11 +20,11 @@ $firstname = $lastname = $email = $regard = $message = '';
 // validation when the submit button is pressed
 if (isset($_POST['submit'])) {
     $valid = true;
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $email = $_POST['email'];
-    $regard = $_POST['regard'];
-    $message = $_POST['message'];
+    $firstname = test_input($_POST['firstname']);
+    $lastname = test_input($_POST['lastname']);
+    $email = test_input($_POST['email']);
+    $regard = test_input($_POST['regard']);
+    $message = test_input($_POST['message']);
 
 
     if (strlen($firstname) >= 40 || strlen($firstname) <= 2) {
@@ -50,8 +50,10 @@ if (isset($_POST['submit'])) {
 
     // sending the mail when everything is valid
     if ($valid) {
+        $finalMessage = $firstname.' '.$lastname.'<br>'.$email.'<br>'.$message;
         mail('nick_forster@icloud.com', $regard, $message);
         echo "<style>#response { display: flex !important; }</style>";
+        echo $finalMessage;
         $firstnameErr = $lastnameErr = $emailErr = $regardErr = $messageErr = '';
         $firstname = $lastname = $email = $regard = $message = '';
     }
@@ -68,6 +70,14 @@ if (isset($_POST['reset'])) {
     <script>window.location += '#contact' </script>
     <?php
 }
+
+function test_input($data): string
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    return htmlspecialchars($data);
+}
+
 ?>
 <header id="header">
     <a href="#home">about</a>
