@@ -53,7 +53,6 @@ if (isset($_POST['submit'])) {
         $finalMessage = $firstname.' '.$lastname.'<br>'.$email.'<br>'.$message;
         mail('nick_forster@icloud.com', $regard, $message);
         echo "<style>#response { display: flex !important; }</style>";
-        echo $finalMessage;
         $firstnameErr = $lastnameErr = $emailErr = $regardErr = $messageErr = '';
         $firstname = $lastname = $email = $regard = $message = '';
     }
