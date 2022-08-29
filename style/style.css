@@ -17,3 +17,21 @@ h1 {
 main, footer {
     transform: translateY(10rem);
 }
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+    opacity: 0;
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #8c8c8c;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #cecece;
+}

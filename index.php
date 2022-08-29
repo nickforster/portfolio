@@ -55,6 +55,7 @@ if (isset($_POST['submit'])) {
         echo "<style>#response { display: flex !important; }</style>";
         $firstnameErr = $lastnameErr = $emailErr = $regardErr = $messageErr = '';
         $firstname = $lastname = $email = $regard = $message = '';
+        ?> <script>history.pushState({}, "", "")</script> <?php
     }
     ?>
     <script>window.location += '#contact' </script>
