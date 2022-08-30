@@ -1,2 +1,2 @@
 # Portfolio
-Visit my portfolio [here](https://nickforster.ch)
+Visit my portfolio [here](http://nickforster.ch)
